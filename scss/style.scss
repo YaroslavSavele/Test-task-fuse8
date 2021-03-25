@@ -1,0 +1,191 @@
+@import "_nullstyle";
+
+//General style start===============================
+body {
+   padding-top: 12px;
+   background-color: #fffefd;
+   font-family: "Open Sans", sans-serif;
+}
+
+.catalog {
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 35px 50px 77px 50px;
+
+   @media (max-width: 500px) {
+      padding: 10px;
+   }
+}
+.title {
+   margin: 0 21px 44px 0;
+
+   text-align: center;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 49px;
+   color: #45852d;
+
+   @media (max-width: 1285px) {
+      margin: 0 0 44px 0;
+   }
+}
+.filter {
+   margin-bottom: 45px;
+
+   @media (max-width: 400px) {
+      margin-bottom: 0;
+   }
+}
+.filter__label {
+   margin: 0 12px 0 1px;
+
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 24px;
+   letter-spacing: -0.3px;
+   color: #363636;
+}
+.filter__input {
+   width: 418px;
+   height: 50px;
+   padding-left: 20px;
+
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 24px;
+   color: #363636;
+
+   border: 1px solid #d8d8d8;
+   border-radius: 25px;
+
+   @media (max-width: 500px) {
+      width: 250px;
+   }
+}
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 21px;
+
+   @media (max-width: 1285px) {
+      justify-content: center;
+   }
+   @media (max-width: 400px) {
+      gap: 0;
+   }
+}
+.cards__link {
+   display: block;
+   color: #363636;
+   transition: 0.3s;
+   
+   &:hover {
+      transform: scale(1.05);
+   }
+}
+.card {
+   width: 379px;
+   height: 381px;
+   margin-bottom: 17px;
+
+   background-color: #f8f8f8;
+   border: 1px solid #d8d8d8;
+
+   position: relative;
+   
+   @media (max-width: 400px) {
+      transform: scale(0.8);
+      margin-bottom: -45px;
+   }
+   @media (max-width: 350px) {
+      transform: scale(0.7);
+      margin-bottom: -80px;
+   }
+}
+.card__img {
+   margin-bottom: 20px;
+}
+.card__title {
+   margin: 0 0 2px 20px;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 27px;
+}
+.card__address {
+   margin: 0 0 15px 20px;
+
+   font-size: 16px;
+   line-height: 22px;
+}
+.card__type {
+   position: absolute;
+   top: 197px;
+   right: 0;
+   height: 30px;
+   
+
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 16px;
+   text-align: center;
+
+   color: #ffffff;
+}
+.card__type_independent {
+   padding: 8px 10px 5px 11px;
+   background-color: #006f79;
+}
+.card__type_support {
+   padding: 8px 8px 5px 8px;
+   background-color: #ec6608;
+}
+.card__price-description {
+   margin: 0 0 7px 20px;
+   font-size: 16px;
+   line-height: 22px;
+}
+.card__price {
+   font-weight: 700;
+}
+.card__share {
+   margin: 0 0 17px 20px;
+   font-size: 14px;
+   line-height: 19px;
+}
+.btn {
+   display: block;
+   width: 150px;
+   height: 50px;
+   margin: 43px auto 0 503px;
+   padding: 0 10px 4px 0;
+
+   border: 1px solid #d8d8d8;
+   border-radius: 25px;
+   background: url(/img/Chevron.svg) no-repeat 80% 50%;
+
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: -0.3px;
+
+   transition: 0.3s;
+
+   @media (max-width: 1285px) {
+      margin: 43px auto 0 auto;
+   }
+
+   &:hover {
+      transform: scale(1.1);
+      background-color: #f8f8f8;
+   }
+
+   &:active {
+      transform: scale(0.9);
+      background-color: tomato;
+   }
+}
+
+.hide{
+   display: none;
+}
